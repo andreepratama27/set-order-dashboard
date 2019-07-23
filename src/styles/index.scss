@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+$accent: #efbf4c;
+$dark: #353942;
+$youngDark: #797d88;
+$gray: #f4f4f4;
+$info: #1d868b;
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $gray;
+}
+
+.side-bar {
+  background-color: $dark;
+}
+
+.home-link.active {
+  @apply font-semibold;
+  @apply text-black;
+  border-bottom: 2px solid gold;
+}
+
+.wrapper {
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 6rem 6rem 2rem;
+  }
+}
+
+.button-primary {
+  background-color: $info;
+  border-radius: 0.3rem;
+}
