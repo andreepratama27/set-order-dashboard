@@ -7524,6 +7524,10 @@ $info: #1d868b;
   background-color: $gray;
 }
 
+.custom-header {
+  background-color: $gray;
+}
+
 .side-bar {
   background-color: $dark;
 }

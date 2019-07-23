@@ -21,12 +21,12 @@ const Sales: React.FC = () => {
             </a>
           </li>
           <li className="mr-8 h-16 flex flex-col items-center justify-center">
-            <a href="#" className="text-gray-500">
+            <a href="#" className="text-gray-500 font-light">
               Month
             </a>
           </li>
           <li className="mr-8 h-16 flex flex-col items-center justify-center">
-            <a href="#" className="text-gray-500">
+            <a href="#" className="text-gray-500 font-light">
               Week
             </a>
           </li>
@@ -58,9 +58,9 @@ const Sales: React.FC = () => {
         </div>
 
         <div className="w-full mt-4">
-          <div className="bg-gray-200 p-4 pl-10 pr-10 flex flex-row justify-between">
-            <p className="text-gray-500 font-light">Full summary</p>
-            <p className="text-gray-500 font-light flex flex-row items-center">
+          <div className="bg-gray-200 p-4 pl-10 pr-10 flex flex-row justify-between custom-header">
+            <p className="text-gray-700 font-light">Full summary</p>
+            <p className="text-gray-700 font-light flex flex-row items-center">
               <FiDownload className="mr-2" />
               Export
             </p>
