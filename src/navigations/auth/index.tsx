@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { FiSettings, FiBarChart, FiLayers } from "react-icons/fi";
 import AuthWrapper from "../../commons/auth-wrapper";
 
-import Home from "../../modules/home";
-import Sales from "../../modules/sales";
-import Menu from "../../modules/menu";
+import Home from "modules/home";
+import Sales from "modules/sales";
+import Menu from "modules/menu";
 
 const Auth: React.FC = () => {
   return (

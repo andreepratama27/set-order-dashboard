@@ -1,9 +1,10 @@
 import React from "react";
 import "./styles/index.scss";
-import Navigation from "./navigations/auth";
+import AuthNavigation from "./navigations/auth";
+import GuestNavigation from "./navigations/guest";
 
 const App: React.FC = () => {
-  return <Navigation />;
+  return <GuestNavigation />;
 };
 
 export default App;
