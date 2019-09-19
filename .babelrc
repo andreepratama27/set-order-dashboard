@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "api": ["./src/api/"],
+          "modules": ["./src/modules/"],
+          "commons": ["./src/commons/"],
+          "styles": ["./src/styles/"],
+          "services": ["./src/services/"],
+          "configs": ["./src/configs/"],
+          "reduxer": ["./src/redux/"],
+          "ducks": ["./src/redux/ducks/"],
+          "sagas": ["./src/redux/sagas/"],
+        }
+      }
+    ]
+  ]
+}

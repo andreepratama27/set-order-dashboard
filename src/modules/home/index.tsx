@@ -1,12 +1,17 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, {useEffect} from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {connect} from 'react-redux';
 
-import HomeWrapper from "./components/home-wrapper";
+import HomeWrapper from './components/home-wrapper';
 
-import AccountSetting from "./components/account-setting";
-import BusinessSetting from "./components/business-setting";
+import AccountSetting from './components/account-setting';
+import BusinessSetting from './components/business-setting';
 
-const Home: React.FC = () => {
+const mapStateToProps = (state: any) => ({
+  auth: state.auth,
+});
+
+const Home: React.FC = (props: any) => {
   return (
     <Router>
       <HomeWrapper>
@@ -17,4 +22,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default connect(mapStateToProps)(Home);
